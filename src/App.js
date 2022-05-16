@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
-
+import Navbar1 from './Components/Logo'
+import Navbar2 from './Components/Links';
+import Navbar3 from './Components/Btn';
 function App() {
+  let data = [{name:Navbar2}]
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='Navbar'>
+
+      <Navbar1></Navbar1>
+      <Navbar2></Navbar2>
+      <Navbar3></Navbar3>
+
     </div>
+
   );
 }
 
